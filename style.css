@@ -1,0 +1,67 @@
+@font-face {
+	font-family: titleFont;
+	src: url(caveat.ttf);
+}
+
+@font-face {
+	font-family: contentFont;
+	src: url(comfortaa.ttf);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	background-color: #a9c8b6;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	font-family: titleFont;
+}
+
+#main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px 70px;
+	font-family: contentFont;
+
+}
+
+
+.bookStyle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0px 10px;
+	height: 375px;
+	width: 500px;
+	border: 5px solid white;
+	background-color: #EECDC4;
+	border-radius: 20px;
+}
+
+.myImage {
+	width: auto;
+  	height: 300px;
+  
+}
+
+.text {
+	display: flex;
+	flex-direction: column;
+}
+
+.text p {
+	margin: 2px;
+}
+
+.bookDetails {
+	display: flex;
+	font-size: 25px;
+}
