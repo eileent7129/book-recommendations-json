@@ -1,3 +1,5 @@
+AOS.init();
+
 let myContent = document.getElementById("main");
 
 let bookDatabase = [
@@ -35,7 +37,7 @@ let bookDatabase = [
 },
 {
 	"title": "Vanessa Jared's Got a Man",
-	"image": "images/man.jpg",
+	"image": "images/a-man.jpg",
 	"author": "LaQuette",
 	"genre": "Romance",
 	"rating": "4.2/5",
@@ -82,6 +84,8 @@ for (var i = 0; i < bookDatabase.length; i++){
 function createElement(bookDetails) {
 	let bookContainer = document.createElement("DIV");
 	bookContainer.classList.add('bookStyle');
+	bookContainer.setAttribute('data-aos', 'fade-up');
+	bookContainer.setAttribute('data-aos-duration', '3000')
 
 	let myImg = document.createElement("IMG");
 	myImg.classList.add("myImage");
@@ -115,3 +119,4 @@ function createElement(bookDetails) {
 	myContent.appendChild(bookContainer);
 
 }
+

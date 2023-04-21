@@ -28,13 +28,13 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 10px 70px;
+	gap: 30px 70px;
 	font-family: contentFont;
 
 }
 
 
-.bookStyle{
+.bookStyle {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -44,7 +44,15 @@ body {
 	border: 5px solid white;
 	background-color: #EECDC4;
 	border-radius: 20px;
+	transition: box-shadow 0.3s;
+
 }
+
+.bookStyle:hover {
+	box-shadow: -5px 5px #888888;
+
+}
+
 
 .myImage {
 	width: auto;
@@ -55,6 +63,7 @@ body {
 .text {
 	display: flex;
 	flex-direction: column;
+	width: 200px;
 }
 
 .text p {
